@@ -1,28 +1,58 @@
+#include <cs50.h>
 #include <stdio.h>
 
-// Telling the compiler that this function exists, allowing it to be called before its definition
-void print_row(int n);
+// Prototypes
+int get_positive_int(string prompt);
+void print_pyramid(int height);
 
-// Our main function
 int main(void)
 {
-    // Learning how to declares a constant integer n
-    const int n = 3;
+    // Ask the user for the height
+    int height = get_positive_int("Height up to 12: ");
 
-    // Print n rows
-    for (int i = 0; i < n; i++)
-    {
-        print_row(n);
-    }
+    // Print the pyramid
+    print_pyramid(height);
 }
 
-// Definition of the print_row function we declared earlier
-void print_row(int n)
+// Ask for a number between 1 and 8
+int get_positive_int(string prompt)
 {
-    for (int i = 0; i < n; i++)
+    int n;
+    do
     {
-        printf("#");
+        n = get_int("%s", prompt);
     }
-    // move to the next line after finishing one row
-    printf("\n");
+    while (n < 1 || n > 12);
+    return n;
+}
+
+// Print a double half-pyramid
+void print_pyramid(int height)
+{
+    for (int i = 0; i < height; i++)
+    {
+        // Print spaces (left padding)
+        for (int j = 0; j < height - i - 1; j++)
+        {
+            printf(" ");
+        }
+
+        // Left pyramid blocks
+        for (int k = 0; k <= i; k++)
+        {
+            printf("#");
+        }
+
+        // Middle gap (2 spaces)
+        printf("  ");
+
+        // Right pyramid blocks
+        for (int k = 0; k <= i; k++)
+        {
+            printf("#");
+        }
+
+        // New line
+        printf("\n");
+    }
 }
