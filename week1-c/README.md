@@ -27,7 +27,6 @@ It felt very different from HTML/CSS, because here I had to think about logic, m
 ✓ How to use **conditionals** (if/else) to make decisions.  
 ✓ Input validation — never trust the first thing the user types.  
 ✓ Formatting text with `printf` and placeholders like `%i` or `%s`.  
-✓ Basics of **command-line arguments** with `argc` and `argv`.  
 ✓ Applying **algorithms** (greedy, Luhn’s) to solve real problems.  
 
 ---
