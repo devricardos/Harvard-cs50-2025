@@ -6,7 +6,8 @@ The goal is to practice problem-solving, improve programming logic, and build a 
 ---
 
 ## 📂 Repository structure
-- **week1_c/** → first programs in C (hello world, mario, cash).
+- **week0_scratch/** → start thinking logically before coding
+- **week1_c/** → first programs in C (hello world, mario, calculator, credit).
 - **week2_arrays/** → array manipulation and simple cryptography.
 - **week3_algorithms/** → basic algorithms (plurality, runoff).
 - **week4_memory/** → working with memory and images.
@@ -15,6 +16,7 @@ The goal is to practice problem-solving, improve programming logic, and build a 
 ---
 
 ## ✅ Progress
+- [x] Week 0 - Scratch
 - [x] Week 1 - C  
 - [ ] Week 2 - Arrays  
 - [ ] Week 3 - Algorithms  
@@ -31,7 +33,7 @@ The goal is to practice problem-solving, improve programming logic, and build a 
 
 ## 🔗 Useful links
 - [CS50 Course](https://cs50.harvard.edu/x/)  
-- [My GitHub Profile](https://github.com/devricardos)  
+- [My GitHub Profile](https://github.com/ricardodelfino)  
 
 ---
 
