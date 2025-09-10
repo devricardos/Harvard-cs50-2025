@@ -2,6 +2,27 @@
 
 In Week 2 of CS50, we focused on arrays, strings, and basic cryptography. Exercises provided hands-on experience with C programming, emphasizing preprocessing, compiling, and debugging.
 
+---
+
+## 💡 **Concepts Learned**  
+✓ Arrays: Understanding arrays as contiguous memory blocks for storing multiple values of the same data type, accessed via indices.  
+✓ Strings: Recognizing strings in C as arrays of characters terminated by a null character (\0).  
+✓ Command-Line Arguments: Learning how argc (argument count) and argv (argument vector) allow programs to process user inputs from the command line.  
+✓ Cryptography Basics: Exploring simple cryptographic techniques, such as encoding/decoding text using ciphers.  
+✓ Memory Concepts: Understanding how arrays are stored in memory and their relationship to memory allocation in C.  
+
+---
+
+## 🛠️ **Techniques / Skills Practiced**  
+✓ Array Manipulation: Declaring, initializing, and accessing array elements in C (e.g., int numbers[] = {1, 2, 3}).  
+✓ String Handling: Using string manipulation functions (e.g., strcmp) and processing strings as character arrays.  
+✓ Command-Line Input Processing: Writing programs that handle inputs via argc and argv (e.g., printing user-provided arguments).  
+✓ Debugging: Applying techniques like print statements, stepping through code with a debugger, and "rubber duck debugging" to identify errors.  
+✓ Programming in C: Writing and running C programs, including using libraries like cs50.h and managing return values (e.g., return 0 for success).  
+✓ Problem-Solving with Arrays/Strings: Implementing solutions for problem sets like Scrabble (scoring words), Readability (text analysis), Caesar (cipher encryption), and Substitution (complex cipher).  
+
+---
+
 ## 📂 Files / Problem Sets
 
 ### 🔐 Problem Sets
@@ -68,5 +89,5 @@ make uppercase
 ```
 
 ## 🔗 Resources
-[CS50 Week 2 Lecture](https://cs50.harvard.edu/x/weeks/2/?utm_source=chatgpt.com)<br>
+[CS50 Week 2 Lecture](https://cs50.harvard.edu/x/weeks/2/)  
 [CS50 Problem Set 2](https://cs50.harvard.edu/x/psets/2/)
