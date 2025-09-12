@@ -23,25 +23,34 @@ This week, I learned about algorithms, focusing on iteration, recursion, searchi
 ## 📂 Files / Problem Sets
 
 ### 🔐 Problem Sets
--
--
--
+- [answers.txt](answers.txt) – Solution to the sort problem, detailing approaches to sorting algorithms.  
+- [plurality.c](plurality.c) – Implements a plurality election system with `vote` and `print_winner` functions (PSet 3).  
+- [runoff.c](runoff.c) – Implements ranked-choice voting system (instant runoff) with functions for tabulating votes in a matrix, checking winners, and eliminating candidates (PSet 3).
 
-### 🔗 **Lecture Files**  
-- [iteration.c](week3-algorithms/iteration.c) – Practiced loops and iterative problem-solving  
-- [phonebook.c](week3-algorithms/phonebook.c) – Implemented a simple phonebook using arrays and structs  
-- [recursion.c](week3-algorithms/recursion.c) – Solved problems recursively, understanding the stack flow  
-- [search.c](week3-algorithms/search.c) – Implemented linear and binary search algorithms  
+### 🔗 **Lecture Files**
+- [iteration.c](iteration.c) – Draws a pyramid using nested loops for iterative problem-solving.  
+- [phonebook.c](phonebook.c) – Implemented a simple phonebook using arrays and structs.
+- [recursion.c](recursion.c) – Draws a pyramid using a recursive function that calls itself to demonstrate recursion and stack flow.  
+- [search.c](search.c) – Implements linear search for strings using `strcmp` and binary search for sorted arrays.
 
-## 🛠️ **Compilation and Execution**  
-For files with no arguments:  
+## 🛠️ **Compilation and Execution**
+For files with no arguments:
 ```bash
 make iteration
 ./iteration
 ```
+For problem sets like `plurality` and `runoff`, which require command-line arguments:
+```bash
+make plurality
+./plurality candidate1 candidate2 candidate3
+```
+```bash
+make runoff
+./runoff candidate1 candidate2 candidate3 ... candidate´n´
+```
 ---
  
-## 📝 **Notes / Best Practices**  
+## 📝 **Notes **  
 ✓ Always test with edge cases to ensure correctness  
 ✓ Trace recursive calls carefully to understand the program flow  
 ✓ Use clear variable names for readability  
