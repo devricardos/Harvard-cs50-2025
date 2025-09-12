@@ -27,7 +27,7 @@ The goal is to practice problem-solving, improve programming logic, and build a 
 - [x] [Week 0 - Scratch](week0-scratch/) → Computational thinking and block-based programming with Scratch  
 - [x] [Week 1 - C](week1-c/) → Introduction to C (hello, mario, cash, credit)  
 - [x] [Week 2 - Arrays](week2-arrays/) → Arrays, loops, strings, and simple cryptography (caesar, substitution)  
-- [ ] [Week 3 - Algorithms](week3-algorithms/) → Basic algorithms (linear search, binary search, plurality, runoff, tideman)  
+- [x] [Week 3 - Algorithms](week3-algorithms/) → Basic algorithms (linear search, binary search, plurality, runoff, tideman)  
 - [ ] [Week 4 - Memory](week4-memory/) → Memory, pointers, and image processing (filter, recover)  
 - [ ] [Week 5 - Data Structures](week5-data-structures/) → Data structures (speller, hash tables, tries)  
 - [ ] [Week 6 - Python](week6-python/) → Introduction to Python (hello, mario, cash, readability, dna)  
