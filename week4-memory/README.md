@@ -37,6 +37,10 @@ For files with no arguments:
  - Byte = group of 8 bits (11001011 = 8 bits = 1 byte)
  - Base-16 = 2⁴ every digit always uses 4 bits, so it is perfect for computers that store info with bytes (8 bits)
  - When humans write hexadecimal numbers we should use 0x1F (sample for 32 in decimal)
+   
+✓ Pointer is just a Value (memory spot) that happens to be a location (0X100C)
+ - int * pX = &x; =(english meaning)=> "integer pointer named pX is set to the address of x"
+ - int y = *px;   =(english meaning)=> "integer named y is set to the value pointed to by the adress inside pX"
 
 
 ---
