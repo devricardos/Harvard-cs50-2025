@@ -1,10 +1,11 @@
-// Fails to swap two integers
-// https://youtu.be/kcRdFGbzR1I?t=5948
+// Swap two integers by reference (pass-by-reference/ pass-by-address)
+// https://youtu.be/kcRdFGbzR1I?t=6757
+// Real use of pointers and pointee (Blinky video: https://youtu.be/kcRdFGbzR1I?t=5753)
 
 #include <stdio.h>
 
-// Function prototype for swap, which takes two integers
-void swap(int a, int b);
+// Function prototype for swap, which takes two integer pointers
+void swap(int *a, int *b);
 
 int main(void)
 {
@@ -12,16 +13,15 @@ int main(void)
     int y = 2; // Initialize y to 2
 
     printf("x is %i, y is %i\n", x, y); // Print initial values
-    swap(x, y); // Call swap to attempt swapping x and y
-    printf("x is %i, y is %i\n", x, y); // Print values after swap (unchanged due to pass-by-value)
+    swap(&x, &y); // Call swap with addresses of x and y to swap their values
+    printf("x is %i, y is %i\n", x, y); // Print values after swap (x and y are swapped)
 }
 
-// Attempts to swap two integers, but doesn't work because C uses pass-by-value
-// swap values, just like the glasses of water on class
-void swap(int a, int b)
+// Swaps two integers using pointers to modify the original variables
+void swap(int *a, int *b)
 {
-    int tmp = a; // Store a in temporary variable
-    a = b;       // Assign b's value to a
-    b = tmp;     // Assign tmp (original a) to b
-    // Changes are local to a and b, so x and y in main are unaffected
+    int tmp = *a; // Store value at address a in temporary variable
+    *a = *b;      // Assign value at address b to address a
+    *b = tmp;     // Assign tmp (original value of a) to address b
+    // Changes affect the original variables in main via pointers
 }
